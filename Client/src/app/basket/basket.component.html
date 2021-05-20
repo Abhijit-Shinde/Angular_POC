@@ -1,4 +1,4 @@
-<div class="container mt-2">
+<div class="container mt-1">
   <div *ngIf="(basket$ | async) === null">
       <p>Empty Basket !! Add Something</p>
   </div>
@@ -34,7 +34,7 @@
                                       <th scope="row">
                                           <div class="p-2">
                                               <img src="{{item.pictureUrl}}" alt="{{item.productName}}"
-                                                   style="max-height: 50px;">
+                                                   style="max-height: 70px;">
                                               <div class="ml-3 d-inline-block align-middle">
                                                   <h5 class="mb-0">
                                                       <a routerLink="/shop/{{item.id}}"
@@ -50,12 +50,12 @@
                                       <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
                                       <td class="align-middle">
                                           <div class="d-flex align-items-center">
-                                              <i (click)="decrementItemQuantity(item)" class="fa fa-minus-circle text-info mr-2"
+                                              <i (click)="decrementItemQuantity(item)" class="fa fa-minus-circle text-primary mr-2"
                                                   style="cursor: pointer; font-size: 2em;"></i>
                                               <span class="font-weight-bold" style="font-size: 1.5em;">
                                                   {{item.quantity}}
                                               </span>
-                                              <i (click)="incrementItemQuantity(item)" class="fa fa-plus-circle text-info mx-2"
+                                              <i (click)="incrementItemQuantity(item)" class="fa fa-plus-circle text-primary mx-2"
                                                   style="cursor: pointer; font-size: 2em;"></i>
                                           </div>
                                       </td>
@@ -75,9 +75,9 @@
 
               <div class="row">
                   <div class="col-6 offset-6">
-                      <app-order-totals></app-order-totals>
-                      <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block">
-                          Proceed to checkout
+                      <app-order-total></app-order-total>
+                      <a routerLink="/checkout" class="btn btn-outline-primary py-2 btn-block" style="font-size: 23px; font-weight: bold;">
+                          Checkout
                       </a>
                   </div>
               </div>

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BasketService } from 'src/app/basket/basket.service';
 import { IProduct } from 'src/app/shared/interfaces/product';
 import { MainShopService } from '../main-shop.service';
 
@@ -12,14 +13,13 @@ export class ViewProductComponent implements OnInit {
 
   product : IProduct[];
 
-  constructor(private mainShopService : MainShopService, private activateRoute : ActivatedRoute) { }
+  constructor(private mainShopService : MainShopService, private activatedRoute : ActivatedRoute, private basketService: BasketService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.viewProduct();
   }
-
+  
   viewProduct(){
-    this.mainShopService.getProduct(+this.activateRoute.snapshot.paramMap.get('id')).subscribe(product => {this.product = product;},err => {console.log(err)});
+    this.mainShopService.getProduct(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe(product => {this.product = product;},err => {console.log(err)});
   }
-
 }
