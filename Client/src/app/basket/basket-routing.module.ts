@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { MainShopComponent } from './main-shop.component';
-import { ViewProductComponent } from './view-product/view-product.component';
+import { BasketComponent } from './basket.component';
 
 const routes: Routes = [
-  {path: '',component:MainShopComponent},
-  {path: ':id',component:ViewProductComponent},
+  {path: '', component: BasketComponent}
 ];
 
 @NgModule({
@@ -16,4 +14,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class MainShopRoutingModule { }
+export class BasketRoutingModule { }

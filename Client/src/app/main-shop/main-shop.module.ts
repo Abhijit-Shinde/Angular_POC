@@ -5,6 +5,7 @@ import { ProductItemComponent } from './product-item/product-item.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import {RouterModule} from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { MainShopRoutingModule } from './main-shop-routing.module';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     RouterModule,
+    MainShopRoutingModule
   ],
-  exports: [MainShopComponent]
 })
 export class MainShopModule { }

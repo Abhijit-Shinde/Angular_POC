@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {CoreModule} from './core/core.module';
 import { MainShopModule } from './main-shop/main-shop.module';
+import { HomeModule } from './home/home.module';
+import { BasketModule } from './basket/basket.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import { MainShopModule } from './main-shop/main-shop.module';
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    MainShopModule,
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
