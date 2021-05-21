@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center mt-5 pt-5">
+  <div class="col-3 mt-4">
+    <div class="text-center mb-4">
+      <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+    </div>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+          <app-form-input formControlName="displayName" [label]="'Name'"></app-form-input>
+          <app-form-input formControlName="email" [label]="'Email'"></app-form-input>
+          <app-form-input formControlName="password" [label]="'Password'" [type]="'password'"></app-form-input>
+
+          <ul class="text-danger list-unstyled" *ngIf="errors">
+              <li *ngFor="let error of errors">
+                  {{error}}
+              </li>
+          </ul>
+
+          <button  class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button>
+      </form>
+  </div>
+</div>
