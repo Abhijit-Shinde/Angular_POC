@@ -1,0 +1,30 @@
+[
+    {
+      "Id": 1,
+      "ShortName": "DM1",
+      "Description": "Fastest",
+      "DeliveryTime": "1-2 Days",
+      "Price": 100
+    },
+    {
+      "Id": 2,
+      "ShortName": "DM2",
+      "Description": "Within 5 days",
+      "DeliveryTime": "2-5 Days",
+      "Price": 60
+    },
+    {
+      "Id": 3,
+      "ShortName": "DM3",
+      "Description": "Slowest but pocket friendly",
+      "DeliveryTime": "5-10 Days",
+      "Price": 35
+    },
+    {
+      "Id": 4,
+      "ShortName": "DM4",
+      "Description": "Yay! Free Shipping",
+      "DeliveryTime": "1-2 Weeks",
+      "Price": 0
+    }
+  ] 
