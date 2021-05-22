@@ -1,0 +1,32 @@
+
+<div class="mt-4" [formGroup]="checkoutForm">
+  <div class="row" formGroupName="addressForm">
+      <div class="form-group col-6">
+          <app-form-input [label]="'First name'" formControlName="firstName"></app-form-input>
+      </div>
+      <div class="form-group col-6">
+          <app-form-input [label]="'Last name'" formControlName="lastName"></app-form-input>
+      </div>
+      <div class="form-group col-6">
+          <app-form-input [label]="'Street'" formControlName="street"></app-form-input>
+      </div>
+      <div class="form-group col-6">
+          <app-form-input [label]="'City'" formControlName="city"></app-form-input>
+      </div>
+      <div class="form-group col-6">
+          <app-form-input [label]="'State'" formControlName="state"></app-form-input>
+      </div>
+      <div class="form-group col-6">
+          <app-form-input [label]="'Zip code'" formControlName="zipCode"></app-form-input>
+      </div>
+  </div>
+</div>
+
+<div class="float-none d-flex justify-content-between flex-column flex-lg-row mb-5 mt-5">
+  <button class="btn btn-outline-primary" routerLink="/basket">
+      <i class="fa fa-angle-left"></i> Back to basket
+  </button>
+  <button class="btn btn-primary" cdkStepperNext>
+      Go to Delivery <i class="fa fa-angle-right"></i>
+  </button>
+</div>
