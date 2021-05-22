@@ -30,8 +30,9 @@
 
 ## Checkout With Address Delivery Methods and Order Review
 ![image](https://user-images.githubusercontent.com/35055744/119234519-f73f6380-bb4b-11eb-85c5-5b8bffa26511.png)
-![image](https://user-images.githubusercontent.com/35055744/119234524-01616200-bb4c-11eb-92fa-65e7000866d0.png)
-![image](https://user-images.githubusercontent.com/35055744/119234534-0faf7e00-bb4c-11eb-803c-e3debca66016.png)
+![image](https://user-images.githubusercontent.com/35055744/119234658-b09e3900-bb4c-11eb-9cd2-ff303a4437c3.png)
+![image](https://user-images.githubusercontent.com/35055744/119234678-c3b10900-bb4c-11eb-9035-48b425e5e9e1.png)
+
 
 
 ## Order Success 
